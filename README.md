@@ -7,7 +7,7 @@ Repositorio con las tareas y proyectos del curso de desarrollo con Flutter.
 ## 📚 Índice de Proyectos
 
 ### ✅ Tema 1: Drawer y Navegación
-- **[Actividad 1: App con Drawer](./tema1-drawer-app/)** - Aplicación con menú lateral y navegación entre 5 pantallas
+- **[Actividad 1: App con Drawer](./FLUTTER/firts_personal_drawer/)** - Aplicación con menú lateral y navegación entre 5 pantallas
 
 ---
 
