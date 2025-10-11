@@ -4,6 +4,8 @@ import '../screens/screen2.dart';
 import '../screens/screen3.dart';
 import '../screens/screen4.dart';
 import '../screens/screen5.dart';
+import '../screens/screen6.dart';
+import '../screens/screen7.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({Key? key}) : super(key: key);
@@ -16,15 +18,10 @@ class MyDrawer extends StatelessWidget {
         children: [
           // Cabecera del drawer
           const DrawerHeader(
-            decoration: BoxDecoration(
-              color: Colors.blue,
-            ),
+            decoration: BoxDecoration(color: Colors.blue),
             child: Text(
               'Menú',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 24,
-              ),
+              style: TextStyle(color: Colors.white, fontSize: 24),
             ),
           ),
 
@@ -84,6 +81,30 @@ class MyDrawer extends StatelessWidget {
               Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(builder: (context) => const Screen5()),
+              );
+            },
+          ),
+
+          // Opción 6
+          ListTile(
+            leading: const Icon(Icons.text_fields, color: Colors.teal),
+            title: const Text('Textos con Fuentes'),
+            onTap: () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => const Screen6()),
+              );
+            },
+          ),
+
+          // Opción 7
+          ListTile(
+            leading: const Icon(Icons.image, color: Colors.indigo),
+            title: const Text('Imágenes Repetidas'),
+            onTap: () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => const Screen7()),
               );
             },
           ),
