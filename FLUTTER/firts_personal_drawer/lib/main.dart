@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'screens/screen1.dart';
+import 'screens/datosPersonales.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
-  class MyApp extends StatelessWidget {
+class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
@@ -13,10 +13,14 @@ void main() {
     return MaterialApp(
       title: 'Mi Drawer App',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.deepPurple,
         useMaterial3: true,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.deepPurple,
+          foregroundColor: Colors.white,
+        ),
       ),
-      home: const Screen1(),
+      home: const DatosPersonales(),
       debugShowCheckedModeBanner: false,
     );
   }
